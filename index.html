@@ -45,27 +45,27 @@ completed[k]=correct;document.getElementById(k+'Feedback').textContent=correct?'
 function resetAssembly(k){assembled[k]={};completed[k]=false;renderSlots(k);document.getElementById(k+'Feedback').textContent='';updateScores()}
 function updateScores(){let s=(completed.fan?4.5:0)+(completed.gate?4.5:0);document.getElementById('simScore').textContent=s;updateTotal()}
 const questions=[
-['Apakah maksud reka bentuk teknologi?',['Menghasilkan penyelesaian menggunakan teknologi','Melukis tanpa tujuan','Menghafal nama bahan','Menghias sahaja'],0],
-['Apakah fungsi panel solar pada kipas solar?',['Menghasilkan tenaga elektrik daripada cahaya','Menyimpan air','Mengukur suhu','Menguatkan bunyi'],0],
-['Komponen yang memutarkan bilah kipas ialah…',['Motor','Tapak','Panel hiasan','Skru penutup sahaja'],0],
-['Apakah sumber tenaga utama bagi kipas solar?',['Cahaya matahari','Arang batu','Petrol','Gas memasak'],0],
-['Mengapa komponen perlu dicantum dengan betul?',['Supaya produk berfungsi dan selamat','Supaya lebih berat','Supaya sukar dibaiki','Supaya menggunakan lebih tenaga'],0],
-['Apakah fungsi sensor pada pagar automatik?',['Mengesan objek atau pergerakan','Mengecat palang','Menyimpan pagar','Menghasilkan cahaya matahari'],0],
-['Komponen yang menggerakkan palang pagar ialah…',['Motor/penggerak','Buku panduan','Papan tanda','Panel hiasan'],0],
-['Apakah fungsi unit kawalan?',['Mengawal operasi sistem','Menjadi tapak hiasan','Menggantikan semua sensor','Menghasilkan bahan api'],0],
-['Apakah amalan keselamatan semasa memasang komponen elektrik?',['Putuskan bekalan kuasa sebelum pemasangan','Sentuh wayar terdedah','Gunakan tangan basah','Tarik wayar dengan kuat'],0],
-['Antara berikut, yang manakah sumber tenaga boleh baharu?',['Angin','Petroleum','Arang batu','Gas asli'],0],
-['Tenaga solar diperoleh daripada…',['Matahari','Bulan','Tanah liat','Petroleum'],0],
-['Tenaga hidro menggunakan…',['Pergerakan air','Pembakaran plastik','Batu bata','Bunyi'],0],
-['Yang manakah sumber tenaga tidak boleh baharu?',['Arang batu','Angin','Cahaya matahari','Aliran air'],0],
-['Petroleum terbentuk dalam tempoh…',['Sangat lama','Beberapa minit','Satu hari','Satu minggu'],0],
-['Apakah contoh biojisim?',['Sisa tumbuhan','Cahaya matahari','Angin','Air pasang sahaja'],0],
-['Apakah tujuan lakaran sebelum membina produk?',['Merancang rupa dan susunan komponen','Mengelakkan semua ujian','Menggantikan produk sebenar','Membazir bahan'],0],
-['Apakah yang perlu dilakukan selepas produk siap dipasang?',['Menguji fungsi dan keselamatan','Terus membuangnya','Tidak perlu memeriksa','Menyembunyikan produk'],0],
-['Jika kipas solar tidak berpusing, tindakan awal yang sesuai ialah…',['Periksa sambungan dan cahaya pada panel','Patahkan bilah','Siram motor dengan air','Buang panel solar'],0],
-['Mengapa pagar automatik berguna?',['Membantu mengawal keluar masuk dengan lebih mudah','Menghapuskan semua risiko','Tidak memerlukan tenaga langsung','Menggantikan semua pintu rumah'],0],
-['Apakah ciri produk yang baik?',['Selamat, berfungsi dan sesuai dengan keperluan','Cantik sahaja walaupun tidak berfungsi','Sangat sukar digunakan','Menggunakan bahan tanpa had'],0],
-['Mengapakah sumber tenaga boleh baharu digalakkan?',['Boleh diperbaharui dan membantu mengurangkan penggunaan bahan api fosil','Bekalannya sentiasa habis dengan cepat','Semua sumbernya perlu dilombong','Tidak boleh digunakan untuk menjana elektrik'],0]
+['Apakah maksud reka bentuk teknologi?',['Menghafal nama bahan','Menghasilkan penyelesaian menggunakan teknologi','Menghias sahaja','Melukis tanpa tujuan'],1],
+['Apakah fungsi panel solar pada kipas solar?',['Menyimpan air','Menguatkan bunyi','Menghasilkan tenaga elektrik daripada cahaya','Mengukur suhu'],2],
+['Komponen yang memutarkan bilah kipas ialah…',['Skru penutup sahaja','Tapak','Panel hiasan','Motor'],3],
+['Apakah sumber tenaga utama bagi kipas solar?',['Cahaya matahari','Petrol','Arang batu','Gas memasak'],0],
+['Mengapa komponen perlu dicantum dengan betul?',['Supaya sukar dibaiki','Supaya menggunakan lebih tenaga','Supaya lebih berat','Supaya produk berfungsi dan selamat'],3],
+['Apakah fungsi sensor pada pagar automatik?',['Mengecat palang','Mengesan objek atau pergerakan','Menghasilkan cahaya matahari','Menyimpan pagar'],1],
+['Komponen yang menggerakkan palang pagar ialah…',['Panel hiasan','Papan tanda','Motor/penggerak','Buku panduan'],2],
+['Apakah fungsi unit kawalan?',['Menggantikan semua sensor','Menjadi tapak hiasan','Menghasilkan bahan api','Mengawal operasi sistem'],3],
+['Apakah amalan keselamatan semasa memasang komponen elektrik?',['Putuskan bekalan kuasa sebelum pemasangan','Tarik wayar dengan kuat','Gunakan tangan basah','Sentuh wayar terdedah'],0],
+['Antara berikut, yang manakah sumber tenaga boleh baharu?',['Petroleum','Arang batu','Angin','Gas asli'],2],
+['Tenaga solar diperoleh daripada…',['Petroleum','Matahari','Bulan','Tanah liat'],1],
+['Tenaga hidro menggunakan…',['Batu bata','Pergerakan air','Bunyi','Pembakaran plastik'],1],
+['Yang manakah sumber tenaga tidak boleh baharu?',['Angin','Aliran air','Cahaya matahari','Arang batu'],3],
+['Petroleum terbentuk dalam tempoh…',['Sangat lama','Satu hari','Satu minggu','Beberapa minit'],0],
+['Apakah contoh biojisim?',['Air pasang sahaja','Cahaya matahari','Sisa tumbuhan','Angin'],2],
+['Apakah tujuan lakaran sebelum membina produk?',['Menggantikan produk sebenar','Membazir bahan','Merancang rupa dan susunan komponen','Mengelakkan semua ujian'],2],
+['Apakah yang perlu dilakukan selepas produk siap dipasang?',['Terus membuangnya','Menguji fungsi dan keselamatan','Tidak perlu memeriksa','Menyembunyikan produk'],1],
+['Jika kipas solar tidak berpusing, tindakan awal yang sesuai ialah…',['Buang panel solar','Siram motor dengan air','Patahkan bilah','Periksa sambungan dan cahaya pada panel'],3],
+['Mengapa pagar automatik berguna?',['Tidak memerlukan tenaga langsung','Menghapuskan semua risiko','Membantu mengawal keluar masuk dengan lebih mudah','Menggantikan semua pintu rumah'],2],
+['Apakah ciri produk yang baik?',['Selamat, berfungsi dan sesuai dengan keperluan','Menggunakan bahan tanpa had','Cantik sahaja walaupun tidak berfungsi','Sangat sukar digunakan'],0],
+['Mengapakah sumber tenaga boleh baharu digalakkan?',['Bekalannya sentiasa habis dengan cepat','Semua sumbernya perlu dilombong','Tidak boleh digunakan untuk menjana elektrik','Boleh diperbaharui dan membantu mengurangkan penggunaan bahan api fosil'],3]
 ];
 function renderQuiz(){let root=document.getElementById('quizQuestions');root.innerHTML='';questions.forEach((q,i)=>{let d=document.createElement('div');d.className='q';d.innerHTML='<p>'+(i+1)+'. '+q[0]+'</p><div class="options">'+q[1].map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+String.fromCharCode(65+j)+'. '+o+'</label>').join('')+'</div>';root.appendChild(d)})}
 function gradeQuiz(){let unanswered=questions.filter((q,i)=>!document.querySelector('input[name="q'+i+'"]:checked')).length;if(unanswered){document.getElementById('quizFeedback').textContent='Sila jawab semua soalan dahulu. Belum dijawab: '+unanswered+'.';return}quizMark=0;questions.forEach((q,i)=>{let v=document.querySelector('input[name="q'+i+'"]:checked');if(v&&+v.value===q[2])quizMark++});quizDone=true;document.getElementById('quizScore').textContent=quizMark;document.getElementById('quizFeedback').textContent='Selesai! Markah kuiz: '+quizMark+'/21. Tab seterusnya dibuka.';updateTotal();unlocked=Math.max(unlocked,2);refreshTabLocks();goTab('mind')}
